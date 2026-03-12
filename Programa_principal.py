@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Mar 12 15:24:14 2026
+import Funciones
 
-@author: solcollins
-"""
+lista = Funciones.registrar_habitos()
 
-hola
+resultado = Funciones.analizar_habitos(lista)
+
+print("Resumen de actividades")
+print(resultado)
