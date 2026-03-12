@@ -12,5 +12,19 @@ def registrar_habitos():
         lista_act.append(actividad)
         if actividad == "Termine":
             break
+    return lista_act
     
+    
+def analizar_habitos(lista): 
+    diccionario_actividades = {}
+    for i in lista:
+        if i not in diccionario_actividades:
+            diccionario_actividades [i] = 1 
+        if i in diccionario_actividades:
+            diccionario_actividades [i] += 1 
      
+    return diccionario_actividades       
+            
+           
+    
+    
